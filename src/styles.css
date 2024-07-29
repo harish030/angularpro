@@ -1,0 +1,47 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import 'ag-grid-community/styles/ag-grid.css';
+
+@import 'ag-grid-community/styles/ag-theme-quartz.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* .ag-theme-quartz {
+    --ag-header-height: 30px;
+    --ag-header-foreground-color: white;
+    --ag-header-background-color: black;
+    --ag-header-cell-hover-background-color: rgb(80, 40, 140);
+    --ag-header-cell-moving-background-color: rgb(80, 40, 140);
+} */
+
+:host {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+  }
+.ag-theme-quartz .ag-header {
+    font-family: cursive;
+}
+.ag-theme-quartz .ag-header-group-cell {
+    font-weight: normal;
+    font-size: 22px;
+}
+.ag-theme-quartz .ag-header-cell {
+    font-size: 18px;
+}
+
+.select2-dropdown {
+    @apply rounded-b-lg shadow-md;
+  }
+
+  @layer components {
+    
+        .ag-theme-quartz {
+            --ag-header-height: 30px;
+            --ag-header-foreground-color: white;
+            --ag-header-background-color: theme(colors.blue.900);
+            --ag-header-cell-hover-background-color: rgb(80, 40, 140);
+            --ag-header-cell-moving-background-color: rgb(80, 40, 140);
+        }
+    
+  }
